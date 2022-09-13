@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import CategoriasJson from '../../../assets/categorias.json';
-
-interface CategoriasJson {
-  id: number,
-  nomecategoria: string,
-}
+import { Categorias } from '../../core/model';
 
 
 @Component({
@@ -13,8 +8,15 @@ interface CategoriasJson {
   styleUrls: ['./categoria.component.scss']
 })
 export class CategoriaComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'nomecategoria'];
-  dataSource = CategoriasJson;
+
+  categorias: Categorias[] = [
+
+    {"id": 1, "nomecategoria": "Carros"},
+    {"id": 2, "nomecategoria": "Motos"}
+
+  ];
+
+  displayedColumns = ['id', 'nomecategoria'];
 
   constructor() { }
 
