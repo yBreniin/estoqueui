@@ -9,6 +9,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule } from '@angular/material/table';
 import { CoreModule } from './core/core.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { CoreModule } from './core/core.module';
     MatIconModule,
     MatButtonModule,
     MatTableModule,
+    HttpClientModule,
     CoreModule,
   ],
   providers: [],
