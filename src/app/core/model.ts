@@ -7,5 +7,4 @@ export interface Produtos {
   id: number;
   nomeproduto: string;
   categoria_id: number;
-  // curso = new Curso();
 }

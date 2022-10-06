@@ -8,12 +8,12 @@ import { Categorias } from '../core/model';
 })
 export class CategoriasService {
 
+  private readonly API = '../../assets/categorias.json'
+
+
   constructor(private http: HttpClient) { }
 
-  list(): Categorias[] {
-    return [
-    {"id": 1, "nomecategoria": "Carros"},
-    {"id": 2, "nomecategoria": "Motos"}
-    ]
+  list() {
+    return this.http.get<Categorias[]>(this.API);
   }
 }
