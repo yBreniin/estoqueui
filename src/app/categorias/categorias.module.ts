@@ -9,12 +9,8 @@ import { CoreModule } from '../core/core.module';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-
-
 @NgModule({
-  declarations: [
-    CategoriaComponent
-  ],
+  declarations: [CategoriaComponent],
   imports: [
     CommonModule,
     CategoriasRoutingModule,
@@ -22,7 +18,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     CoreModule,
     MatCardModule,
     MatButtonModule,
-    MatToolbarModule
-  ]
+    MatToolbarModule,
+  ],
 })
-export class CategoriasModule { }
+export class CategoriasModule {}

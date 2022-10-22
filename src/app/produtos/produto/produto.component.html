@@ -5,7 +5,8 @@
     <mat-card-title>Carros e Motos</mat-card-title>
     <mat-card-subtitle></mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="https://www.carrosblog.com/wp-content/uploads/2015/07/carro-moto.jpg" alt="Photo of a Shiba Inu">
+  <img mat-card-image src="https://www.carrosblog.com/wp-content/uploads/2015/07/carro-moto.jpg"
+    alt="Photo of a Shiba Inu">
   <mat-card-content>
     <p>
       Produtos
@@ -31,6 +32,16 @@
   <ng-container matColumnDef="nomeproduto">
     <th mat-header-cell *matHeaderCellDef> Nome </th>
     <td mat-cell *matCellDef="let produtos"> {{produtos.nomeproduto}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="produtopreco">
+    <th mat-header-cell *matHeaderCellDef> Preço </th>
+    <td mat-cell *matCellDef="let produtos"> {{produtos.produtopreco}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="categoria_id">
+    <th mat-header-cell *matHeaderCellDef> Categoria </th>
+    <td mat-cell *matCellDef="let produtos"> {{produtos.categoria_id}} </td>
   </ng-container>
 
 
